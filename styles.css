@@ -7,6 +7,56 @@ body{
 	color: #AAAAAA;
 	font-family: consolas;
 }
+h1	{
+	text-align: center;
+}
+h2	{
+	text-align: center;
+}
+
 a	{
 	color:#AAAAAA;
+}
+
+hr	{
+    height: 2px;
+    background-color: purple;
+    border: none;
+    }
+
+footer{
+	}
+	
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+.button{
+	top: 2.5%;
+	left: 1.5%;
+	position: absolute;
+	border: 2px solid #AAAAAA;
+	color: #AAAAAA;
+	padding: 10px 25px;
+	text-align: center;
+	font-size: 18px;
+	font-family: consolas;
+	cursor: pointer;
+	background-color: rgb(37, 37, 39);
+}
+
+.tile{
+	position: absolute;
+	border: 2px solid #AAAAAA;
+	color: #AAAAAA;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	font-size: 18px;
+	font-family: consolas;
+	cursor: pointer;
+	background-color: rgb(37, 37, 39);
 }
