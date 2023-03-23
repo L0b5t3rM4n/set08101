@@ -108,6 +108,6 @@ function openExitWindow() {
 function exit() {
 	var x = document.getElementById("underlay3");
 	x.setAttribute("style", "animation: turnOff 0.4s");
-	setTimeout(function(){window.location.assign("intro.html")}, 300);
+	setTimeout(function(){window.location.assign("index.html")}, 300);
 
 }
