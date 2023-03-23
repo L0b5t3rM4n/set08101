@@ -1,0 +1,91 @@
+
+@font-face {
+    font-family: 'lores_12_otregular';
+    src: url('../fonts/lores12ot-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lores12ot-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'lores_9_otwide_regular';
+    src: url('../fonts/lores9otwide-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lores9otwide-regular-webfont.woff') format('woff');
+}
+
+body{
+	background-color: rgb(37, 37, 39);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 1600px 850px;
+	color: #AAAAAA;
+	font-family: lores_9_otwide_regular;
+	font-weight: normal;
+	font-style: normal;
+	
+}
+h1	{
+	text-align: center;
+	font-size: 50px;
+	text-shadow: -1.5px -1.5px 0 red, 1.5px -1.5px 0 blue, -1.5px 1.5px 0 green;
+}
+
+h2	{
+	text-align: center;
+	font-size: 28px;
+	text-shadow: -1px -1px 0 red, 1px -1px 0 blue, -1px 1px 0 green;
+}
+
+	
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25%;
+}
+
+
+.button{
+	top: 2.5%;
+	left: 1.5%;
+	position: absolute;
+	border: 2px solid #AAAAAA;
+	color: #AAAAAA;
+	padding: 10px 25px;
+	text-align: center;
+	font-family: lores_12_otregular;
+	font-size: 18px;
+	cursor: pointer;
+	background-color: rgb(37, 37, 39);
+	box-shadow: inset 0 0 10px #000000;
+	cursor: url('../pictures/icons8-apple-arcade-35.png') 10 10, auto;
+}
+
+.tile{
+	position: absolute;
+	border: none;
+	color: #AAAAAA;
+	background-color: black;
+	width: 220px;
+	height: 138px;
+	text-align: center;
+	font-family: lores_12_otregular;
+	font-size: 18px;
+	text-shadow: -1px -1px 0 red, 1px -1px 0 blue, -1px 1px 0 green;
+	box-shadow: inset 0 0 3px #000000;
+	cursor: url('../pictures/icons8-apple-arcade-35.png') 10 10, auto;
+}
+
+#fade img {
+  position:absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+}
+
+#fade img.top {
+	opacity: 0;
+}
+
+#fade img.top:hover {
+	opacity:1;
+}
+

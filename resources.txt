@@ -1,0 +1,13 @@
+https://pixelatedprovisions.com/
+https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+https://github.com/googlefonts/Inconsolata	
+https://fonts.adobe.com/fonts/lo-res	
+https://martingauer.com/
+https://github.com/attackemartin/css-gameboy
+https://www.sector32.net
+https://blockrage.pgs-soft.com/
+http://aleclownes.com/2017/02/01/crt-display.html
+https://speckyboy.com/page-transition-effects/
+https://dev.to/ekeijl/retro-crt-terminal-screen-in-css-js-4afh
+https://fonts.google.com/specimen/VT323
+https://stackoverflow.com/questions/6338217/get-a-css-value-with-javascript
