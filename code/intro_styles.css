@@ -25,6 +25,23 @@ html {
 	overflow: hidden;
 }
 
+/*custom scroll bar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #161616; 
+}
+::-webkit-scrollbar-thumb {
+  background: red; 
+}
+ 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #underlay2, #underlay1, #underlay3{
 	animation: fadeIn 4s;
 }
@@ -38,8 +55,18 @@ html {
 	animation: textShadow4 0.8s infinite;
 }
 
+.text2 {
+	color: #03fc0e;
+	background: transparent;
+	font-family: vt323regular;
+	font-size: 30px;
+	position: relative;
+	animation: textShadow4 0.8s infinite;
+}
+
 .headerButtons {
 	border: 0;
+	
 }
 
 .headerButtons:hover {
@@ -80,7 +107,7 @@ html {
   top: 0; left: 0; bottom: 0; right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
   z-index: 2;
-  background-size: 100% 6px;
+  background-size: 100% 4px;
   pointer-events: none;
 }
 
@@ -125,10 +152,36 @@ html {
 	position: absolute;
 	border: 3px solid #03fc0e;
 	background: #303030;
-	height: 95%; width: 97.5%;
+	height: 91%; width: 97.5%;
 	top: 15px; left: 15px;
 	display: none;
 }
+
+.frame2 {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	background: #303030;
+	height: 93%; width: 50%;
+	top: 15px; left: 48%;
+	display: none;
+}
+
+.contactForm {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	background: #161616;
+	height: 26%; width: 58%;
+	top: 70%; left: 40%;
+}
+
+.inputBox {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	font-size: 20px;
+	background: #303030;
+	height: 40px; width: 330px;
+}
+
 
 .contentInFrame {
 	height: 100%; 
@@ -170,3 +223,23 @@ html {
 .exitButtons:active {
 	opacity: 1;
 }
+
+.timeButton {
+	position: absolute;
+	top: 90.3%; left: 95%; 
+	border: 0px;
+	font-size: 25px;
+	animation: fadeIn 5s;
+}
+
+.timeButton:hover {
+	cursor: url('../pictures/red_neon_cursor.png') 6 10, auto;
+}
+
+.timeTag {
+	position: absolute;
+	top: 90%; left: 76%;
+	font-size: 25px;
+	animation: fadeIn 5s;
+}
+	

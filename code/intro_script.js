@@ -24,7 +24,7 @@ function welcomeMsg() {
 		cursorChar: "_"})
 		.type("Welcome", {delay: 1000})
 		.delete(null, {delay: 1000})
-		.type("This is a site about food", {delay: 1000})
+		.type("This is a website site about food", {delay: 1000})
 		.delete(null, {delay: 1000})
 		.type("Gaming food", {delay: 1000})
 		.delete(null, {delay: 1000})
@@ -36,11 +36,11 @@ function welcomeMsg() {
 
 var global_arg = 0;
 
-function openWindow(arg) {
+function openWindow(arg, arg2) {
 	
 	if (global_arg == 0) {global_arg = arg;}
 	
-	var frameElement = document.getElementById("frame"),
+	var frameElement = document.getElementById(arg2),
 		frameStyle = window.getComputedStyle(frameElement),
 		frameDisplay = frameStyle.getPropertyValue("display");
 		
@@ -110,4 +110,37 @@ function exit() {
 	x.setAttribute("style", "animation: turnOff 0.4s");
 	setTimeout(function(){window.location.assign("index.html")}, 300);
 
+}
+
+var generator = 0;
+
+function generateDateTime() {
+	
+	document.getElementById("timeButton").style.display = "none";
+	
+	if (generator == 0) {
+		
+		const instance = new TypeIt("#time", {
+			speed: 40,
+			deleteSpeed: 30,
+			lifeLike: true,
+			cursorChar: "_"})
+			.type("################")
+			.delete(null)
+			.go().destroy();
+		
+		generator = 1;
+		
+		setTimeout(displayDateTime, 1000);
+	}
+	
+		function displayDateTime() {
+			
+		setTimeout(function() {
+			const dateTime = new Date().toLocaleString();
+			document.getElementById("time").innerHTML = dateTime.replace(",", " ");
+			displayDateTime();
+		}, 1000);
+	}
+	
 }
