@@ -1,0 +1,245 @@
+/* !-- intro pages styles */
+
+html {
+	cursor: url('../pictures/red_neon_cursor.png') 6 10, auto;
+}
+
+@font-face {
+    font-family: 'lores_9_otwide_regular';
+    src: url('../fonts/lores9otwide-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lores9otwide-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'vt323regular';
+	src: url('../fonts/vt323-regular-webfont.woff2') format('woff2'),
+		 url('../fonts/vt323-regular-webfont.woff') format('woff');
+}
+
+#screen {
+	position: relative;
+	border: 30px solid #00000000 transparent;
+	border-image-source: url("../pictures/bezel_gray.png");
+	border-image-slice: 30 fill;
+	border-image-outset: 0;
+	overflow: hidden;
+}
+
+/*custom scroll bar*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #161616; 
+}
+::-webkit-scrollbar-thumb {
+  background: red; 
+}
+ 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#underlay2, #underlay1, #underlay3{
+	animation: fadeIn 4s;
+}
+
+.text {
+	color: #03fc0e;
+	background: transparent;
+	font-family: lores_9_otwide_regular;
+	font-size: 30px;
+	position: relative;
+	animation: textShadow4 0.8s infinite;
+}
+
+.text2 {
+	color: #03fc0e;
+	background: transparent;
+	font-family: vt323regular;
+	font-size: 30px;
+	position: relative;
+	animation: textShadow4 0.8s infinite;
+}
+
+.headerButtons {
+	border: 0;
+	
+}
+
+.headerButtons:hover {
+	cursor: url('../pictures/red_neon_cursor.png') 6 10, auto;
+	color: black;
+	background: #03fc0e;
+	opacity: 0.7;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+.headerButtons:active {
+	opacity: 1;
+}
+
+.start {
+	top: 50%; left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background-color: #161616;
+	border: 1px solid #03fc0e;
+	animation: blink 1s infinite, textShadow4 0.8s infinite, boxShadow4 0.8s infinite;
+	animation-delay: 1.5s;
+}
+		
+.start:hover {
+	cursor: url('../pictures/red_neon_cursor.png') 6 10, auto;
+	animation: textShadow4 0.8s infinite, boxShadow4 0.8s infinite;
+}
+
+.button {
+	border: 1px solid #03fc0e;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  z-index: 2;
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.2s infinite;
+}
+
+.crt {
+	background-color: #161616;
+	position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+	height: 100%;
+	width: 100%;
+	margin: auto auto;
+	overflow: hidden;
+}
+
+/* Main page structure */
+.header {
+	position: absolute;
+	height: 46px; width: 95%;
+	top: 30px; left: 40px;
+	border: 3px solid #03fc0e;
+}
+
+.content {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	height: 85%; width: 95%;
+	top: 78px; left: 40px;
+}
+
+.frame {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	background: #303030;
+	height: 91%; width: 97.5%;
+	top: 15px; left: 15px;
+	display: none;
+}
+
+.frame2 {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	background: #303030;
+	height: 93%; width: 50%;
+	top: 15px; left: 48%;
+	display: none;
+}
+
+.contactForm {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	background: #161616;
+	height: 26%; width: 58%;
+	top: 70%; left: 40%;
+}
+
+.inputBox {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	font-size: 20px;
+	background: #303030;
+	height: 40px; width: 330px;
+}
+
+
+.contentInFrame {
+	height: 100%; 
+	width: 100%;
+	display: none; 
+	border: 0px;
+}
+
+.exitWindow {
+	position: absolute;
+	border: 3px solid #03fc0e;
+	background: #303030;
+	height: 150px; width: 600px;
+	top: 35%; left: 30%;
+	display: none;
+}
+
+.exitMsg {
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background: #303030;	
+}
+
+.exitButtons {
+	position: absolute;
+	border: 0;
+	background: transparent;
+}
+
+.exitButtons:hover {
+	cursor: url('../pictures/red_neon_cursor.png') 6 10, auto;
+	color: black;
+	background: #03fc0e;
+	opacity: 0.7;
+	box-shadow: inset 0 0 10px #000000;
+}
+
+.exitButtons:active {
+	opacity: 1;
+}
+
+.timeButton {
+	position: absolute;
+	top: 90.3%; left: 95%; 
+	border: 0px;
+	font-size: 25px;
+	animation: fadeIn 5s;
+}
+
+.timeButton:hover {
+	cursor: url('../pictures/red_neon_cursor.png') 6 10, auto;
+}
+
+.timeTag {
+	position: absolute;
+	top: 90%; left: 76%;
+	font-size: 25px;
+	animation: fadeIn 5s;
+}
+	
