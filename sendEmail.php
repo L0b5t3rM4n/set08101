@@ -15,8 +15,6 @@
         $body = "Name: {$name}\nEmail: {$email}\nMessage: {$message}";
         $headers = "From: {$email}";
 
-        mail($to, $subject, $body, $headers);
-
         if (mail($to, $subject, $body, $headers)) {
             echo "Message sent successfully!";
         } else {
