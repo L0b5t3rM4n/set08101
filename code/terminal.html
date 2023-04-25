@@ -1,0 +1,47 @@
+<!--The main interface of the website-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Terminal</title>
+		<link href="intro_styles.css" rel="stylesheet">
+		<link href="animations.css" rel="stylesheet">
+		<script src="intro_script.js"></script>
+		<script src="typeit.js"></script>	
+		<style>
+		</style>			
+	</head>
+	<body style="background-color: #161616;">
+		<!--An overlay over the body background creating the crt effect-->
+		<div class="crt" id="underlay3">
+			<!--Navigation bar with buttons opening the iframe content tabs-->
+			<div class="header">
+				<button class="text headerButtons" style="left: 10%;" onclick="openWindow('mainIFrame', 'frame')">Main</button>
+				<button class="text headerButtons" style="left: 20%;" onclick="openWindow('recipesIFrame', 'frame')">Recipes</button>
+				<button class="text headerButtons" style="left: 30%;" onclick="openWindow('gamesIFrame', 'frame')">Games</button>
+				<button class="text headerButtons" style="left: 40%;" onclick="openWindow('contactIFrame', 'frame')">Contact</button>
+				<button class="text headerButtons" style="left: 50%;" onclick="openExitWindow()">Exit</button>
+			</div>
+			<!--The empty space under the navigation bar for content-->
+			<div class="content">
+				<!--The opening/closing frame hosting the displayed content-->
+				<div class="frame" id="frame">
+					<!--Iframe elements used to displayed different html files within the frame element-->
+					<iframe class="contentInFrame" src="mainPage.html" id="mainIFrame"></iframe>
+					<iframe class="contentInFrame" src="recipesPage.html" id="recipesIFrame"></iframe>
+					<iframe class="contentInFrame" src="gamesPage.html" id="gamesIFrame"></iframe>
+					<iframe class="contentInFrame" src="contactForm.html" id="contactIFrame"></iframe>
+				</div>
+				<!--The little exit window with yes/no buttons in it-->
+				<div class="text exitWindow" id="exitWindow">
+					<p class="text exitMsg" id="exitMsg">Confirm exit</p>
+					<button class="text exitButtons" id="yesBtn" style="top: 60%; left: 20%;" onclick="exit()">YES</button>
+					<button class="text exitButtons" id="noBtn" style="top: 60%; left: 70%;" onclick="openExitWindow()">NO</button>
+				</div>
+			</div>
+			<!--That little asterisk button on the bottom that when clicked displays current date and time-->
+			<button class="text timeButton" id="timeButton" onclick="generateDateTime()">*</button>
+			<div class="text timeTag" id="time"></div>
+		</div>	
+	</body>
+</html>

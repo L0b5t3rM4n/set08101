@@ -1,0 +1,27 @@
+<!--Fourth tab - contact form (loooks nice but doesn't work unfortunately)-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>		
+		</style>
+		<!--Links referencing the stylesheets and scripts-->
+		<link href="intro_styles.css" rel="stylesheet">
+		<link href="animations.css" rel="stylesheet">
+		<script src="intro_script.js"></script>
+		<script src="typeit.js"></script>
+		<script src="sendEmail.php"></script>
+	</head>
+	<body>
+		<p class="text" style="text-align: center;">
+			<br><br>Get in touch? Contact me!
+			<!--Contact form tag with editable boxes subnitting the data on button click (again, sadly doesn't work)-->
+			<form class="contactForm" id="contactForm" onsubmit="sendEmail()">
+				<input class="inputBox text" style="top: 5%; left: 1%;" type="text" id="name" placeholder="Your Name"  required><br>
+				<input class="inputBox text" style="top: 37.8%; left: 1%;" type="email" id="email" placeholder="Email Address"  required><br>
+				<textarea class="inputBox text" style="top: 5%; left: 41%; height: 84.5%; width: 56.5%;" id="message" placeholder="Your Message" required></textarea><br>
+				<button class="inputBox text headerButtons" style="top: 70.4%; left: 1%; width: 39.2%;" type="submit" onclick="sendEmail()">Send</button>
+			</form>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!--Thirs tab - the games list-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+		</style>
+		<!--Links referencing the stylesheets and scripts-->
+		<link href="intro_styles.css" rel="stylesheet">
+		<link href="animations.css" rel="stylesheet">
+		<script src="intro_script.js"></script>
+		<script src="typeit.js"></script>
+	</head>
+	<body>
+		<!--Buttons opening the games html files as iframes-->
+		<br><button class="text headerButtons" onclick="openWindow('StarboundIFrame', 'frame2')">> Starbound</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('HeartsIFrame', 'frame2')">> Kingdom Hearts</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('PortalIFrame', 'frame2')">> Portal</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('ZeldaIFrame', 'frame2')">> Zelda</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('FalloutIFrame', 'frame2')">> Fallout76</button><br>
+		<!--Another opening/closing frame hosting the iframes content-->
+		<div class="frame2" id="frame2">
+			<!--Iframe elements used to displayed different html files within the frame element-->
+			<iframe class="contentInFrame" src="games/starbound.html" id="StarboundIFrame"></iframe>
+			<iframe class="contentInFrame" src="games/hearts.html" id="HeartsIFrame"></iframe>
+			<iframe class="contentInFrame" src="games/portal.html" id="PortalIFrame"></iframe>
+			<iframe class="contentInFrame" src="games/zelda.html" id="ZeldaIFrame"></iframe>
+			<iframe class="contentInFrame" src="games/fallout76.html" id="FalloutIFrame"></iframe>
+		</div>
+	</body>
+</html>

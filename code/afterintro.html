@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<!--Links referencing the stylesheets and scripts-->
+		<link href="intro_styles.css" rel="stylesheet">
+		<link href="animations.css" rel="stylesheet">
+		<script src="intro_script.js"></script>
+		<script src="typeit.js"></script>	
+		<style>	
+		</style>		
+	</head>
+	<body style="background-color: #161616;">
+		<!--An overlay over the body background creating the crt effect-->
+		<div class="crt" id="underlay2">
+			<!--A welcoming message powered by a TypeIt js library for 'printing' effect-->
+			<p class="text" id="welcome" style="transform: translateX(3%);"></p>
+			<script>welcomeMsg();</script>
+			<script>loadMainPage();</script>
+		</div>	
+	</body>
+</html>

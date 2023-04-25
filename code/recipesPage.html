@@ -1,0 +1,31 @@
+<!--Second tab - the recipe list-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>	
+		</style>
+		<!--Links referencing the stylesheets and scripts-->
+		<link href="intro_styles.css" rel="stylesheet">
+		<link href="animations.css" rel="stylesheet">
+		<script src="intro_script.js"></script>
+		<script src="typeit.js"></script>
+	</head>
+	<body>
+		<!--Buttons opening the recipe html files as iframes-->
+		<br><button class="text headerButtons" onclick="openWindow('meatwichIFrame', 'frame2')">> Meatwich</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('saltIceCreamIFrame', 'frame2')">> Sea Salt Ice Cream</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('cakeIFrame', 'frame2')">> The Cake</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('yetosSoupIFrame', 'frame2')">> Yeto's Superb Soup</button><br>
+		<br><button class="text headerButtons" onclick="openWindow('mudCookieIFrame', 'frame2')">> Mud Cookie</button><br>
+		<!--Another opening/closing frame hosting the iframes content-->
+		<div class="frame2" id="frame2">
+			<!--Iframe elements used to displayed different html files within the frame element-->
+			<iframe class="contentInFrame" src="recipes/meatwich.html" id="meatwichIFrame"></iframe>
+			<iframe class="contentInFrame" src="recipes/saltIceCream.html" id="saltIceCreamIFrame"></iframe>
+			<iframe class="contentInFrame" src="recipes/cake.html" id="cakeIFrame"></iframe>
+			<iframe class="contentInFrame" src="recipes/yetosSoup.html" id="yetosSoupIFrame"></iframe>
+			<iframe class="contentInFrame" src="recipes/mudCookie.html" id="mudCookieIFrame"></iframe>
+		</div>
+	</body>
+</html>
